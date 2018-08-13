@@ -46,8 +46,9 @@ def gesture_on_word(word):
 
 
 def to_bml(str_message):
+    sentences = []
     markings = []
-    sent_count = 0
+    #sent_count = 0
     for sent in re.split('[?.!]', str_message):
         speech_id = 'myspeech0'  # + str(sent_count)
         text = []
@@ -68,8 +69,8 @@ def to_bml(str_message):
         text.append(Mark('T' + str(count)))  # marking the ending of a message
         #markings.append([Speech(id=speech_id, text=text)] + gesture)
         markings.append([Speech(text=text)] + gesture)
-        sent_count += 1
-    return markings
+        #sent_count += 1
+        yield markings
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
@@ -93,4 +94,5 @@ if __name__ == '__main__':
 
             bml_response = to_bml(query)
             print('bml_response: ', bml_response)
-            agent.transition_speaking(bml_response)
+            for bml in bml_response:
+                agent.transition_speaking(bml)
