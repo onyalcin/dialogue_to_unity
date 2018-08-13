@@ -1,0 +1,41 @@
+{
+    "AI": [
+        "fallback_AI",
+        "whatsAI",
+        "whatsDL",
+        "whatLanguage"
+    ],
+    "bot_what": [
+        "bot_learn",
+        "sleep",
+        "health",
+        "fallback_bot_what"
+    ],
+    "labwhoWhatWhere": [
+        "lab_does",
+        "lab_where",
+        "lab_who",
+        "lab_ai"
+    ],
+    "small_talk": [
+        "stillthere",
+        "Answer",
+        "bad",
+        "cute",
+        "boring",
+        "talkFunny",
+        "sports",
+        "jersey",
+        "fallback_small_talk"
+    ],
+    "whoWhatWhere": [
+        "hiHello",
+        "whatName",
+        "who1",
+        "what1",
+        "where1",
+        "bot_age1",
+        "fallback_whoWhatWhere",
+        "bot_can_do"
+    ]
+}

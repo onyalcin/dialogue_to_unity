@@ -1,0 +1,797 @@
+{
+    "": {
+        "context_set": [
+            "cute",
+            "what1",
+            "lab_does"
+        ],
+        "intents": [
+            "fallback_bot_what",
+            "fallback_AI",
+            "fallback_whoWhatWhere",
+            "fallback_small_talk"
+        ]
+    },
+    "[what do you do": {
+        "context_set": [
+            "where1"
+        ],
+        "intents": [
+            "what1"
+        ]
+    },
+    "answer my question": {
+        "context_set": [],
+        "intents": [
+            "Answer"
+        ]
+    },
+    "are special": {
+        "context_set": [],
+        "intents": [
+            "cute"
+        ]
+    },
+    "are there health applications": {
+        "context_set": [
+            "education"
+        ],
+        "intents": [
+            "health"
+        ]
+    },
+    "are you still here": {
+        "context_set": [
+            "what1"
+        ],
+        "intents": [
+            "stillthere"
+        ]
+    },
+    "are you still there": {
+        "context_set": [
+            "what1"
+        ],
+        "intents": [
+            "stillthere"
+        ]
+    },
+    "baseball": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "basketball": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "can you get smarter": {
+        "context_set": [
+            "sleep"
+        ],
+        "intents": [
+            "bot_learn"
+        ]
+    },
+    "can you improve": {
+        "context_set": [
+            "sleep"
+        ],
+        "intents": [
+            "bot_learn"
+        ]
+    },
+    "can you learn": {
+        "context_set": [
+            "sleep"
+        ],
+        "intents": [
+            "bot_learn"
+        ]
+    },
+    "do you like sports": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "do you play baseball": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "do you play football": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "do you play hockey": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "do you play tennis": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "do you sleep": {
+        "context_set": [
+            "what1"
+        ],
+        "intents": [
+            "sleep"
+        ]
+    },
+    "do you sleep much": {
+        "context_set": [
+            "what1"
+        ],
+        "intents": [
+            "sleep"
+        ]
+    },
+    "footbal": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "hello": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "hiHello"
+        ]
+    },
+    "hello there": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "hiHello"
+        ]
+    },
+    "hi": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "hiHello"
+        ]
+    },
+    "hi there": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "hiHello"
+        ]
+    },
+    "hockey": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "how are you coded": {
+        "context_set": [
+            "lab_ai"
+        ],
+        "intents": [
+            "whatLanguage"
+        ]
+    },
+    "how old are you": {
+        "context_set": [
+            "lab_does"
+        ],
+        "intents": [
+            "bot_age1"
+        ]
+    },
+    "i am back": {
+        "context_set": [
+            "what1"
+        ],
+        "intents": [
+            "stillthere"
+        ]
+    },
+    "i cannot understand you": {
+        "context_set": [
+            "bot_learn"
+        ],
+        "intents": [
+            "talkFunny"
+        ]
+    },
+    "i wish you were smarter": {
+        "context_set": [
+            "sleep"
+        ],
+        "intents": [
+            "bot_learn"
+        ]
+    },
+    "it is hard to understand you": {
+        "context_set": [
+            "bot_learn"
+        ],
+        "intents": [
+            "talkFunny"
+        ]
+    },
+    "jersey boy": {
+        "context_set": [
+            "cute"
+        ],
+        "intents": [
+            "jersey"
+        ]
+    },
+    "new jersey": {
+        "context_set": [
+            "cute"
+        ],
+        "intents": [
+            "jersey"
+        ]
+    },
+    "new jersy vibe": {
+        "context_set": [
+            "cute"
+        ],
+        "intents": [
+            "jersey"
+        ]
+    },
+    "sleep much": {
+        "context_set": [
+            "what1"
+        ],
+        "intents": [
+            "sleep"
+        ]
+    },
+    "so you play sports": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "soccer": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "sports": {
+        "context_set": [
+            "boring"
+        ],
+        "intents": [
+            "sports"
+        ]
+    },
+    "tell me about yourself": {
+        "context_set": [
+            "where1"
+        ],
+        "intents": [
+            "what1"
+        ]
+    },
+    "what ai technique to you use": {
+        "context_set": [],
+        "intents": [
+            "lab_ai"
+        ]
+    },
+    "what are bots like you good for": {
+        "context_set": [
+            "bot_learn"
+        ],
+        "intents": [
+            "bot_can_do"
+        ]
+    },
+    "what are you": {
+        "context_set": [
+            "what1"
+        ],
+        "intents": [
+            "who1"
+        ]
+    },
+    "what are you for": {
+        "context_set": [
+            "where1"
+        ],
+        "intents": [
+            "what1"
+        ]
+    },
+    "what are you good for": {
+        "context_set": [
+            "where1"
+        ],
+        "intents": [
+            "what1"
+        ]
+    },
+    "what are you made to do": {
+        "context_set": [
+            "bot_learn"
+        ],
+        "intents": [
+            "bot_can_do"
+        ]
+    },
+    "what are you writen in": {
+        "context_set": [
+            "lab_ai"
+        ],
+        "intents": [
+            "whatLanguage"
+        ]
+    },
+    "what can a bot do": {
+        "context_set": [
+            "AIgoodfor"
+        ],
+        "intents": [
+            "whatsAI"
+        ]
+    },
+    "what can you do": {
+        "context_set": [
+            "where1"
+        ],
+        "intents": [
+            "what1"
+        ]
+    },
+    "what do i call you": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "whatName"
+        ]
+    },
+    "what do we talk about": {
+        "context_set": [
+            "where1"
+        ],
+        "intents": [
+            "what1"
+        ]
+    },
+    "what do you talk about": {
+        "context_set": [
+            "where1"
+        ],
+        "intents": [
+            "what1"
+        ]
+    },
+    "what does the lab do": {
+        "context_set": [
+            "lab_where"
+        ],
+        "intents": [
+            "lab_does"
+        ]
+    },
+    "what happens at your lab": {
+        "context_set": [
+            "lab_where"
+        ],
+        "intents": [
+            "lab_does"
+        ]
+    },
+    "what is ai": {
+        "context_set": [
+            "whatsDL"
+        ],
+        "intents": [
+            "whatsAI"
+        ]
+    },
+    "what is ai good for": {
+        "context_set": [
+            "AIgoodfor"
+        ],
+        "intents": [
+            "whatsAI"
+        ]
+    },
+    "what is artifical intelligence": {
+        "context_set": [
+            "whatsDL"
+        ],
+        "intents": [
+            "whatsAI"
+        ]
+    },
+    "what is deep learning": {
+        "context_set": [
+            "whatLanguage"
+        ],
+        "intents": [
+            "whatsDL"
+        ]
+    },
+    "what is machine learning": {
+        "context_set": [
+            "whatLanguage"
+        ],
+        "intents": [
+            "whatsDL"
+        ]
+    },
+    "what is the artificial intelligence that you use": {
+        "context_set": [],
+        "intents": [
+            "lab_ai"
+        ]
+    },
+    "what is the future of bots": {
+        "context_set": [
+            "AIgoodfor"
+        ],
+        "intents": [
+            "whatsAI"
+        ]
+    },
+    "what is the iviz lab": {
+        "context_set": [
+            "lab_who"
+        ],
+        "intents": [
+            "lab_where"
+        ]
+    },
+    "what is the uses of artifical intelligence, what is the use of bots, what can ai do": {
+        "context_set": [
+            "AIgoodfor"
+        ],
+        "intents": [
+            "whatsAI"
+        ]
+    },
+    "what is your age": {
+        "context_set": [
+            "lab_does"
+        ],
+        "intents": [
+            "bot_age1"
+        ]
+    },
+    "what is your ai": {
+        "context_set": [],
+        "intents": [
+            "lab_ai"
+        ]
+    },
+    "what is your job": {
+        "context_set": [
+            "bot_learn"
+        ],
+        "intents": [
+            "bot_can_do"
+        ]
+    },
+    "what is your lab": {
+        "context_set": [
+            "lab_where"
+        ],
+        "intents": [
+            "lab_does"
+        ]
+    },
+    "what is your name": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "whatName"
+        ]
+    },
+    "what is your purpose": {
+        "context_set": [
+            "where1"
+        ],
+        "intents": [
+            "what1"
+        ]
+    },
+    "what kind of ai are you": {
+        "context_set": [],
+        "intents": [
+            "lab_ai"
+        ]
+    },
+    "what kind of ai are you made of": {
+        "context_set": [],
+        "intents": [
+            "lab_ai"
+        ]
+    },
+    "what programming langauge are you writen in": {
+        "context_set": [
+            "lab_ai"
+        ],
+        "intents": [
+            "whatLanguage"
+        ]
+    },
+    "whats cooking": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "hiHello"
+        ]
+    },
+    "whats your name": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "whatName"
+        ]
+    },
+    "when were you born": {
+        "context_set": [
+            "lab_does"
+        ],
+        "intents": [
+            "bot_age1"
+        ]
+    },
+    "where are you from": {
+        "context_set": [
+            "bot_age1"
+        ],
+        "intents": [
+            "where1"
+        ]
+    },
+    "where do you come from": {
+        "context_set": [
+            "bot_age1"
+        ],
+        "intents": [
+            "where1"
+        ]
+    },
+    "where do you live": {
+        "context_set": [
+            "bot_age1"
+        ],
+        "intents": [
+            "where1"
+        ]
+    },
+    "where is the iviz lab": {
+        "context_set": [
+            "lab_who"
+        ],
+        "intents": [
+            "lab_where"
+        ]
+    },
+    "where were you born": {
+        "context_set": [
+            "bot_age1"
+        ],
+        "intents": [
+            "where1"
+        ]
+    },
+    "who are you": {
+        "context_set": [
+            "what1"
+        ],
+        "intents": [
+            "who1"
+        ]
+    },
+    "who is employed in the lab": {
+        "context_set": [
+            "lab_ai"
+        ],
+        "intents": [
+            "lab_who"
+        ]
+    },
+    "who works in the iviz lab": {
+        "context_set": [
+            "lab_ai"
+        ],
+        "intents": [
+            "lab_who"
+        ]
+    },
+    "who works in the lab": {
+        "context_set": [
+            "lab_ai"
+        ],
+        "intents": [
+            "lab_who"
+        ]
+    },
+    "whos in the iviz lab": {
+        "context_set": [
+            "lab_ai"
+        ],
+        "intents": [
+            "lab_who"
+        ]
+    },
+    "why are you": {
+        "context_set": [
+            "what1"
+        ],
+        "intents": [
+            "who1"
+        ]
+    },
+    "will you get smarter": {
+        "context_set": [
+            "sleep"
+        ],
+        "intents": [
+            "bot_learn"
+        ]
+    },
+    "will you improve": {
+        "context_set": [
+            "sleep"
+        ],
+        "intents": [
+            "bot_learn"
+        ]
+    },
+    "yo": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "hiHello"
+        ]
+    },
+    "yo, yo, yo": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "hiHello"
+        ]
+    },
+    "you are bad": {
+        "context_set": [],
+        "intents": [
+            "bad"
+        ]
+    },
+    "you are cool": {
+        "context_set": [],
+        "intents": [
+            "cute"
+        ]
+    },
+    "you are cute": {
+        "context_set": [],
+        "intents": [
+            "cute"
+        ]
+    },
+    "you are funny, your funny, you are beautiful": {
+        "context_set": [],
+        "intents": [
+            "cute"
+        ]
+    },
+    "you are not answering my question": {
+        "context_set": [],
+        "intents": [
+            "Answer"
+        ]
+    },
+    "you are so cool": {
+        "context_set": [],
+        "intents": [
+            "cute"
+        ]
+    },
+    "you are so cute": {
+        "context_set": [],
+        "intents": [
+            "cute"
+        ]
+    },
+    "you are so sweet": {
+        "context_set": [],
+        "intents": [
+            "cute"
+        ]
+    },
+    "you are sweet": {
+        "context_set": [],
+        "intents": [
+            "cute"
+        ]
+    },
+    "you got a name": {
+        "context_set": [
+            "who1"
+        ],
+        "intents": [
+            "whatName"
+        ]
+    },
+    "you look like someone from new jersey": {
+        "context_set": [
+            "cute"
+        ],
+        "intents": [
+            "jersey"
+        ]
+    },
+    "you talk funny": {
+        "context_set": [
+            "bot_learn"
+        ],
+        "intents": [
+            "talkFunny"
+        ]
+    },
+    "you voice is weird": {
+        "context_set": [
+            "bot_learn"
+        ],
+        "intents": [
+            "talkFunny"
+        ]
+    },
+    "your boring, you are so dry, you are quite straight": {
+        "context_set": [],
+        "intents": [
+            "boring"
+        ]
+    }
+}
