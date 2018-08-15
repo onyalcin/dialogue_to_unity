@@ -70,7 +70,8 @@ def to_bml(str_message):
         #markings.append([Speech(id=speech_id, text=text)] + gesture)
         markings.append([Speech(text=text)] + gesture)
         #sent_count += 1
-        yield markings
+        sentences.append(markings)
+    return sentences
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
