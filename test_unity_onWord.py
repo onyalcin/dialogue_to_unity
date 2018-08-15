@@ -87,12 +87,12 @@ if __name__ == '__main__':
             query = input('Ask me anything: ')
             if not query.strip():
                 continue
-            '''
+            
             # remove quotes if you want to have real response
             clean_query = clean(query)
             query, intent, context = return_response(clean_query)
             print('response: ', query)
-            '''
+            
 
             bml_response = to_bml(query)
             for bml in bml_response:
