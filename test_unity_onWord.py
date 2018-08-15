@@ -50,28 +50,29 @@ def to_bml(str_message):
     markings = []
     #sent_count = 0
     for sent in re.split('[?.!]', str_message):
-        speech_id = 'myspeech0'  # + str(sent_count)
-        text = []
-        gesture = []
-        count = 0
-        #text.append(Mark('T' + str(count)))
-        #text.append('.')
-        count += 1
-        for word in tokenizer.tokenize(sent):
-            text.append(Mark('T' + str(count)))
-            text.append(word)
-            #timing = speech_id + ':T' + str(count)
-            timing = 'T' + str(count)
-            new_gesture = gesture_on_word(word)
-            if new_gesture is not None:
-                gesture += [Gesture(name=new_gesture, start=timing)]
+        if sent != '':
+            speech_id = 'myspeech0'  # + str(sent_count)
+            text = []
+            gesture = []
+            count = 0
+            #text.append(Mark('T' + str(count)))
+            #text.append('.')
             count += 1
-        text.append(Mark('T' + str(count)))  # marking the ending of a message
-        #markings.append([Speech(id=speech_id, text=text)] + gesture)
-        markings.append([Speech(text=text)] + gesture)
-        #sent_count += 1
-        sentences.append(markings)
-    return sentences
+            for word in tokenizer.tokenize(sent):
+                text.append(Mark('T' + str(count)))
+                text.append(word)
+                #timing = speech_id + ':T' + str(count)
+                timing = 'T' + str(count)
+                new_gesture = gesture_on_word(word)
+                if new_gesture is not None:
+                    gesture += [Gesture(name=new_gesture, start=timing)]
+                count += 1
+            text.append(Mark('T' + str(count)))  # marking the ending of a message
+            #markings.append([Speech(id=speech_id, text=text)] + gesture)
+            markings.append([Speech(text=text)] + gesture)
+            #sent_count += 1
+            sentences.append(markings)
+        return sentences
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
