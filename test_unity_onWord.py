@@ -95,6 +95,6 @@ if __name__ == '__main__':
             
 
             bml_response = to_bml(query)
-            for bml in bml_response:
-                print('bml_response: ', bml)
-                agent.transition_speaking(bml)
+            #for bml in bml_response:
+            print('bml_response: ', bml)
+            agent.transition_speaking(bml)
