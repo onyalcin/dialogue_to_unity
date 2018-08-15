@@ -47,10 +47,10 @@ def gesture_on_word(word):
 
 def to_bml(str_message):
     sentences = []
-    markings = []
     #sent_count = 0
     for sent in re.split('[?.!]', str_message):
         if sent != '':
+            markings = []
             speech_id = 'myspeech0'  # + str(sent_count)
             text = []
             gesture = []
@@ -72,7 +72,7 @@ def to_bml(str_message):
             markings.append([Speech(text=text)] + gesture)
             #sent_count += 1
             sentences.append(markings)
-        return sentences
+    return sentences
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
