@@ -64,12 +64,13 @@ def to_bml(str_message):
                 text.append(word)
                 #timing = speech_id + ':T' + str(count)
                 timing = 'T' + str(count)
-                new_gesture = gesture_on_word(word)
-                if new_gesture is not None:
-                    if new_gesture.startswith("f_"):
-                        gesture+= [Face(type=new_gesture[2:], start=timing)]
-                    else:
-                        gesture += [Gesture(name=new_gesture, start=timing)]
+                new_gestures = gesture_on_word(word)
+                if new_gestures is not None:
+                    for new_gesture in new_gestures:
+                        if new_gesture.startswith("f_"):
+                            gesture+= [Face(type=new_gesture[2:], start=timing)]
+                        else:
+                            gesture += [Gesture(name=new_gesture, start=timing)]
                 count += 1
             text.append(Mark('T' + str(count)))  # marking the ending of a message
             #markings.append([Speech(id=speech_id, text=text)] + gesture)
