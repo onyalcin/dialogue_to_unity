@@ -41,7 +41,7 @@ def random_gesture():
 def gesture_on_word(word):
         for k, v in gesture_categories.items():
             if word in v["keywords"]:
-                return random.choice(v["gestures"])[0]
+                return random.choice(v["gestures"])
             else:
                 return random_gesture()
 
