@@ -11,7 +11,7 @@ from text_normalization import *
 from db_utils import *
 from unity_body import UnityBody
 from simple_search import SimpleSearch
-from bml.gesture import Gesture
+from bml.gesture import Gesture, Face
 from bml.speech import Speech, Mark
 
 
@@ -65,7 +65,10 @@ def to_bml(str_message):
                 timing = 'T' + str(count)
                 new_gesture = gesture_on_word(word)
                 if new_gesture is not None:
-                    gesture += [Gesture(name=new_gesture, start=timing)]
+                    if new_gesture.startswith("f_"):
+                        gesture+= [Face(type=new_gesture[2:], start=timing)]
+                    else:
+                        gesture += [Gesture(name=new_gesture, start=timing)]
                 count += 1
             text.append(Mark('T' + str(count)))  # marking the ending of a message
             #markings.append([Speech(id=speech_id, text=text)] + gesture)
