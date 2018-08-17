@@ -9,21 +9,24 @@
   "annoyed":{
     "keywords":["jersey"],
     "gestures":[
-      ["emphatic-no"]
+      ["emphatic-no"],
+      ["f_Squint"]
     ]
   },
   "stop":{
     "keywords":["stop", "boring"],
     "gestures":[
       ["emphatic-no"],
-      ["this"]
+      ["this"],
+      ["f_Concerned"]
     ]
   },
   "disagree":{
     "keywords":["no", "nah", "nothing", "cannot", "can't", "don't", "didn't", "couldn't", "isn't", "wasn't", "never", "not", "nope"],
     "gestures":[   
       ["disagreement-shake"],
-      ["emphatic-no"]
+      ["emphatic-no"],
+      ["f_Concerned"]
     ]
   },
   "however":{
@@ -37,7 +40,8 @@
     "keywords":["really", "very", "quite", "wonderful", "great", "absolutely", "huge", "fantastic", "amazing", "important", "good", "nice", "wow"],
     "gestures":[
       ["gesture_you"],
-      ["shakinghead"]
+      ["shakinghead"],
+      ["f_Surprised"]
     ]
   },
   "comparison":{
@@ -71,7 +75,8 @@
     "keywords":["exactly", "listen", "must"],
     "gestures":[
       ["explaining-beat"],
-      ["agreement-nod"]
+      ["agreement-nod"],
+      ["f_Squint"]
     ]
   },
   "inclusive":{
@@ -92,7 +97,8 @@
     "gestures":[
       ["this"],
       ["gesture_you"],
-      ["explaining-beat"]
+      ["explaining-beat"],
+      ["f_Surprised"]
     ]
   },
   "you":{
