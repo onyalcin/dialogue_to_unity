@@ -11,7 +11,8 @@ from text_normalization import *
 from db_utils import *
 from unity_body import UnityBody
 from simple_search import SimpleSearch
-from bml.gesture import Gesture, Face
+from bml.gesture import Gesture
+from bml.face import Face
 from bml.speech import Speech, Mark
 
 
