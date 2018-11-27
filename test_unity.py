@@ -14,6 +14,7 @@ from simple_search import SimpleSearch
 from bml.gesture import Gesture
 from bml.speech import Speech, Mark
 
+from SpeechRecognizer import Speech_Google
 
 def return_response(question, prev_intent=None, prev_context=None):
     db_search, db_learn, db_context = load_dbs('joey1')
@@ -66,11 +67,17 @@ if __name__ == '__main__':
 
     with UnityBody() as unity_body, Agent(unity_body) as agent:
         time.sleep(2)
-
+        speech_recognizer = Speech_Google()
         while True:
             # agent.transition_listening()
-
-            query = input('Ask me anything: ')
+            selection = prompt("Enter \'s\' for speech input or type in your input:",
+                               completer=WCompleter, lexer=PygmentsLexer(Python3Lexer)
+                               )
+            if selection == 's':
+                query = speech_recognizer.recognize()
+            else:
+                query = selection
+            
             if not query.strip():
                 continue
             '''
